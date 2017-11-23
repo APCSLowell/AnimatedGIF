@@ -26,7 +26,7 @@ Here's the Processing program I'm going to convert to an animated gif. It's an a
   }
   ```
   
-If you run the program, you'll notice that after `frameCount` reaches 29 or so, the circle is so big that it fills the screen and after that there is no noticeable change in the appearance of the animation.
+If you run the program, you'll notice that after `frameCount` reaches 29 or so, the circle is so big that it fills the screen. After that there is no noticeable change in the appearance of the animation.
 ### Step 3: Modify the program to use the `gifAnimation` processing library
 Now we are going to add the code that allows us to export the animation as a gif file. The new program is:   
 
