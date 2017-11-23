@@ -31,8 +31,8 @@ If you run the program, you'll notice that after `frameCount` reaches 29 or so, 
 Now we are going to add the code that allows us to export the animation as a gif file. The new program is:   
 
 ```Processing
-<b>import gifAnimation.*;
-GifMaker gifExport;</b>
+import gifAnimation.*;
+GifMaker gifExport;
 
 int diameter = 10;
 public void setup()
