@@ -31,36 +31,36 @@ If you run the program, you'll notice that after `frameCount` reaches 29 or so, 
 Now we are going to add the code that allows us to export the animation as a gif file. The new program is:   
 
 ```Processing
-  import gifAnimation.*;
-  GifMaker gifExport;
+import gifAnimation.*;
+GifMaker gifExport;
 
-  int diameter = 10;
-  public void setup()
-  {
-    size(200,200);
-    gifExport = new GifMaker(this, "test.gif", 100);
-    gifExport.setRepeat(0); // make it an "endless" animation
-    gifExport.setQuality(255);  // quality range 0 - 255
-    smooth();
-    frameRate(2); //screen is drawn 2 times a second, does not effect speed of gif animation
+int diameter = 10;
+public void setup()
+{
+  size(200,200);
+  gifExport = new GifMaker(this, "test.gif", 100);
+  gifExport.setRepeat(0); // make it an "endless" animation
+  gifExport.setQuality(255);  // quality range 0 - 255
+  smooth();
+  frameRate(2); //screen is drawn 2 times a second, does not effect speed of gif animation
+}
+public void draw()
+{
+  ellipse(100,100,diameter,diameter);
+  diameter = diameter + 10;
+  println(frameCount);
+  export();
+}
+void export() {
+  if(frameCount < 29) {
+    gifExport.setDelay(500); //half second delay, this is where the gif animation speed is set
+    gifExport.addFrame();
+  } else {
+    gifExport.finish();
+    println("gif saved");
+    exit();
   }
-  public void draw()
-  {
-    ellipse(100,100,diameter,diameter);
-    diameter = diameter + 10;
-    println(frameCount);
-    export();
-  }
-  void export() {
-    if(frameCount < 29) {
-      gifExport.setDelay(500); //half second delay
-      gifExport.addFrame();
-    } else {
-      gifExport.finish();
-      println("gif saved");
-      exit();
-    }
-  }
+}
   ```
   
 ### Step 4: Find the animated gif in the sketch folder
