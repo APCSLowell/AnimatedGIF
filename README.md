@@ -51,7 +51,8 @@ public void draw()
   println(frameCount);
   export();
 }
-void export() {
+void export() 
+{
   if(frameCount < 29) 
   {
     gifExport.setDelay(500); //half second delay, this is where the gif animation speed is set
