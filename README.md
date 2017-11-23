@@ -6,6 +6,7 @@ Extract the folder, rename it as `GifAnimation` and copy it to your Processing l
 ![](GifAnimation2.PNG)
 ### Step 2: Write a Processing program
 Here's the Processing program I'm going to convert to an animated gif. It's an animation of a series of circles:   
+```Processing
   int diameter = 10;
   public void setup()
   {
@@ -19,9 +20,11 @@ Here's the Processing program I'm going to convert to an animated gif. It's an a
     diameter = diameter + 10;
     println(frameCount);
   }
+  ```
 If you run the program, you'll notice that after `frameCount` reaches 29 or so, the circle is so big that it fills the screen and there is no noticeable change on the screen.
 ### Step 3: Modify the program to use the `gifAnimation` processing library
 Now we are going to add the code that allows us to export the animation as a gif file. The new program is:   
+```Processing
   import gifAnimation.*;
   GifMaker gifExport;
 
@@ -52,6 +55,7 @@ Now we are going to add the code that allows us to export the animation as a gif
       exit();
     }
   }
+  ```
 ### Step 4: Find the animated gif in the sketch folder
 After you run the modified program, there will no be an animated gif in sketch folder. Here's what mine looked like:   
 ![](GifAnimation3.PNG)   
