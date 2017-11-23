@@ -67,7 +67,7 @@ void export() {
   ```
   
 ### Step 4: Find the animated gif in the sketch folder
-After you run the modified program, there will no be an animated gif in sketch folder. Here's what mine looked like:   
+After you run the modified program, there will now be an animated gif in sketch folder. Here's what mine looked like:   
 
 ![](GifAnimation3.PNG)   
 
