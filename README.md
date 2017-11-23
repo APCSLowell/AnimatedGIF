@@ -66,6 +66,7 @@ void export() {
 }
   ```
   
+Note that in the `export()` the code checks to see if `frameCount` has reached 29. If it has, we'll finish the gif and `exit()` the program. 
 ### Step 4: Find the animated gif in the sketch folder
 After you run the modified program, there will now be an animated gif in sketch folder. Here's what mine looked like:   
 
