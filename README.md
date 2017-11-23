@@ -52,10 +52,13 @@ public void draw()
   export();
 }
 void export() {
-  if(frameCount < 29) {
+  if(frameCount < 29) 
+  {
     gifExport.setDelay(500); //half second delay, this is where the gif animation speed is set
     gifExport.addFrame();
-  } else {
+  } 
+  else 
+  {
     gifExport.finish();
     println("gif saved");
     exit();
@@ -72,5 +75,5 @@ Double click on `test.gif` and you should see your animation:
 
 ![](test.gif)    
 
-You can find out more details on the `gifAnimation` library at [https://github.com/01010101/GifAnimation](https://github.com/01010101/GifAnimation) and [https://gist.github.com/jordanorelli/4992290](https://gist.github.com/jordanorelli/4992290). Thanks to Jordan Orelli for creating the library and 01010101 for porting `gifAnimation` for Processing 3.X.
+You can find out more details on the `gifAnimation` library at the sites that I used to create this page: [https://github.com/01010101/GifAnimation](https://github.com/01010101/GifAnimation) and [https://gist.github.com/jordanorelli/4992290](https://gist.github.com/jordanorelli/4992290). Thanks to Jordan Orelli for creating the `gifAnimation` library and 01010101 for porting it to Processing 3.X.
 
