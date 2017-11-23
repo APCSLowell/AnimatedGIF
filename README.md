@@ -75,5 +75,7 @@ Double click on `test.gif` and you should see your animation:
 
 ![](test.gif)    
 
-You can find out more details on the `gifAnimation` library at the sites that I used to create this page: [https://github.com/01010101/GifAnimation](https://github.com/01010101/GifAnimation) and [https://gist.github.com/jordanorelli/4992290](https://gist.github.com/jordanorelli/4992290). Thanks to [Jordan Orelli](https://github.com/jordanorelli) for creating the `gifAnimation` library and [01010101](https://github.com/01010101) for porting it to Processing 3.X.
+You can find out more details on the `gifAnimation` library at the sites that I used to create this page: - [https://github.com/01010101/GifAnimation](https://github.com/01010101/GifAnimation)
+- [https://gist.github.com/jordanorelli/4992290](https://gist.github.com/jordanorelli/4992290)   
+Thanks to [Jordan Orelli](https://github.com/jordanorelli) for creating the `gifAnimation` library and [01010101](https://github.com/01010101) for porting it to Processing 3.X.
 
