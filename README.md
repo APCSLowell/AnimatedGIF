@@ -38,7 +38,7 @@ int diameter = 10;
 public void setup()
 {
   size(200,200);
-  gifExport = new GifMaker(this, "test.gif", 100);
+  gifExport = new GifMaker(this, "test.gif");
   gifExport.setRepeat(0); // make it an "endless" animation
   gifExport.setQuality(255);  // quality range 0 - 255
   smooth();
